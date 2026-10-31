@@ -1,0 +1,35 @@
+/*
+ * Grundraster für die Termin-Kacheln. Farben und Schriften kommen aus den
+ * Design-Tokens des Themes (theme.json), mit neutralen Ersatzwerten.
+ */
+.sbd-termine__liste {
+	display: grid;
+	gap: var(--wp--preset--spacing--40, 1.5rem);
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr));
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.sbd-termin {
+	background: var(--wp--preset--color--flaeche, #fff);
+	border: 1px solid var(--wp--preset--color--rahmen, #767676);
+	border-inline-start: 0.375rem solid var(--wp--preset--color--leitfarbe, #1a5e8a);
+	border-radius: 0.5rem;
+	padding: 1rem 1.25rem;
+}
+
+.sbd-termin__titel {
+	font-size: var(--wp--preset--font-size--gross, 1.25rem);
+	margin: 0 0 0.5rem;
+}
+
+.sbd-termin__zeit {
+	font-weight: 700;
+	margin: 0;
+}
+
+.sbd-termin__ort,
+.sbd-termin__text {
+	margin: 0.5rem 0 0;
+}

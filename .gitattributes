@@ -1,0 +1,3 @@
+# Nicht im Download-Paket (GitHub-ZIP zum Versions-Tag), das der Update Checker installiert.
+/tests export-ignore
+/.gitattributes export-ignore
